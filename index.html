@@ -84,6 +84,8 @@
               <div class="details-list">
                 <ul>
                   <li><i class="fa fa-check"></i>15 award winning and fan favorite beers</li>
+                  <li><i class="fa fa-check"></i>Free WiFi</li>
+                  <li><i class="fa fa-check"></i>All football, soccer, baseball and basketball channels</li>
                   <li><i class="fa fa-check"></i>Family friendly</li>
                   <li><i class="fa fa-check"></i>Dog friendly</li>
                 </ul>
@@ -100,38 +102,7 @@
   </section>
   <!--/about-->
   <!-- event -->
-  <section id="event">
-    <div class="bg-color" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 text-center" style="padding:60px;">
-            <h1 class="header-h">Grand Opening</h1>
-            <!-- <p class="header-p">Decorations 100% complete here</p> -->
-          </div>
-          <div class="col-md-12" style="padding-bottom:60px;">
-            <div class="item active left">
-              <div class="col-md-6 col-sm-6 left-images">
-                <img src="img/outside.jpeg" class="img-responsive">
-              </div>
-              <div class="col-md-6 col-sm-6 details-text">
-                <div class="content-holder">
-                  <h2 id="grand-countdown"></h2>
-                  <p> Please join us in celebrating the Grand Opening of Happy Tap.  Come checkout our great selection of beer and wine and enjoy the company of Colorado's finest people.</p>
-                  <address>
-                              <strong>Place: </strong>
-                              1757 8th St, Colorado Springs, CO
-                              <br>
-                              <strong>Time: </strong>
-                              Jun 28, 2019 3:00
-                            </address>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
   <!--/ event -->
   <!-- menu -->
   <section id="menu-list" class="section-padding">
@@ -160,6 +131,9 @@
       <a href="img/gallery/4.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/4.jpg" alt=""></a>
       <a href="img/gallery/5.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/5.jpg" alt=""></a>
       <a href="img/gallery/6.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/6.jpg" alt=""></a>
+      <a href="img/gallery/7.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/7.jpg" alt=""></a>
+      <a href="img/gallery/8.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/8.jpg" alt=""></a>
+      <a href="img/gallery/9.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/9.jpg" alt=""></a>
     </div>
   </section>
   <!-- contact -->
@@ -189,10 +163,10 @@
             </div>
             <div class="media-body">
               <h4 class="dark-blue regular">Hours</h4>
-              <p class="light-blue regular alt-p"> Sunday 1:00 - 8:00</p>
-              <p class="light-blue regular alt-p"> Monday to Thursday 3:00 - 9:00</p>
-              <p class="light-blue regular alt-p">Friday 3:00 - 10:00</p>
-              <p class="light-blue regular alt-p">Saturday 1:00 - 10:00</p>
+              <!-- <p class="light-blue regular alt-p"> Sunday 1:00 - 8:00</p> -->
+              <p class="light-blue regular alt-p"> Saturday to Sunday 3:00 - 10:00</p>
+              <!-- <p class="light-blue regular alt-p">Friday 3:00 - 10:00</p> -->
+              <!-- <p class="light-blue regular alt-p">Saturday and Sunday 3:00 - 10:00</p> -->
             </div>
           </div>
         </div>
@@ -232,43 +206,6 @@
   <script src="js/wow.min.js"></script>
   <script src="js/venobox.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-
-
-
-  <script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Aug 2, 2019 03:00:00").getTime();
-
-  // Update the count down every 1 second
-  var x = setInterval(function() {
-
-    // Get today's date and time
-    var now = new Date().getTime();
-      
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-      
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-    // Output the result in an element with id="demo"
-    document.getElementById("grand-countdown").innerHTML = "Grand Opening - " + days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-      
-    // If the count down is over, write some text 
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("grand-countdown").innerHTML = "WE'RE OPEN!";
-    }
-  }, 1000);
-  </script>
-  <div id="menu-container"></div>
-<script type="text/javascript">
-  !function(e,n){var t=document.createElement("script"),a=document.getElementsByTagName("script")[0];t.async=1,a.parentNode.insertBefore(t,a),t.onload=t.onreadystatechange=function(e,a){(a||!t.readyState||/loaded|complete/.test(t.readyState))&&(t.onload=t.onreadystatechange=null,t=void 0,a||n&&n())},t.src=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",function(){PreloadEmbedMenu("menu-container",26070,99926)});
-</script>
  
 
 </body>
